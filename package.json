@@ -1,5 +1,5 @@
 {
-  "name": "BUSRApp",
+  "name": "busr-app",
   "version": "1.0.0",
   "description": "Discord bot to help with check-in",
   "main": "index.js",
