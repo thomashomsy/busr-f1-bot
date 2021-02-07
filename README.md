@@ -1,21 +1,19 @@
-# How to Build Your First Discord Bot with Node.js
+## Discord Check In Bot
 
-Michiel Mulders shows you how to install and set up a new Discord bot, which is made easier thanks to the API offered by the Discord.js package.
+This Bot's sole purpose is to update a spreadsheet whenever a player reacts to a message to check them in or to undo said check-in.
 
-Link to article on SitePoint: [https://www.sitepoint.com/discord-bot-node-js/](https://www.sitepoint.com/discord-bot-node-js/)
+Can't say the code is overly clean, but does the job.
 
-## Requirements
+## Usages
 
-- [Node.js](http://nodejs.org/)
-- [Discord](https://discordapp.com/) account
+- [British University Sim Racing](http://busr.gg/)
+<!-- - [Discord](https://discordapp.com/) account -->
 
-## Installation Steps (if applicable)
+## Installation Steps
 
-1. Clone repo
-2. Run `npm install`
-3. Add Discord credentials in a `.env` file
+1. Run `npm install`
+2. Add Discord credentials in a `.env` file
 3. Run `node index.js`
-4. Interact with your Discord bot via your web browser
 
 ## License
 

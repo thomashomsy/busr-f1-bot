@@ -1,15 +1,16 @@
 {
-  "name": "discord-bot",
+  "name": "BUSR App",
   "version": "1.0.0",
-  "description": "Discord bot for SitePoint",
+  "description": "Discord bot to help with check-in",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Michiel Mulders",
+  "author": "Thomas Homsy",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.5.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "googleapis": "^39.2.0"
   }
 }
