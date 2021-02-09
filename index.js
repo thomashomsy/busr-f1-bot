@@ -127,7 +127,7 @@ bot.on("message", async (msg) => {
         emoji +
           " **CHECK-IN IS NOW OPEN FOR RACE WEEK " +
           race +
-          "** " +
+          "** THIS IS A TEST POST" +
           //aRole +
           " " +
           emoji +
