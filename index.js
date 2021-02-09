@@ -125,7 +125,7 @@ bot.on("message", async (msg) => {
           " **CHECK-IN IS NOW OPEN FOR RACE WEEK " +
           race +
           "** " +
-          aRole +
+          //aRole +
           " " +
           emoji +
           " \n\nPlease React with a ✅ if you're planning on participating!" +
@@ -277,6 +277,7 @@ function checkIn(user, yes = true) {
     };
     sheets.spreadsheets.values.get(defined, (err, result) => {
       if (err || !result.data) {
+        console.log(err);
         user.send(error("99 - Get Sheet Error"));
         return;
       } else {
@@ -336,7 +337,9 @@ function checkIn(user, yes = true) {
 
 bot.on("messageReactionAdd", (reaction, user) => {
   if (lastMessage && lastMessage.id === reaction.message.id) {
+    console.log("stage 1: " + user.tag);
     if (reaction.emoji.toString().includes("✅")) {
+      console.log("Was same emoji");
       //Not self
       if (user.tag !== lastMessage.author.tag) {
         console.log(user.tag + " attempted to check-in!");
