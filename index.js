@@ -341,13 +341,8 @@ function checkIn(user, yes = true) {
 }
 
 bot.on("messageReactionAdd", (reaction, user) => {
-  console.log(
-    user.tag + "Reacted with " + reaction.emoji.name + " to " + reaction.message
-  );
   if (lastMessage && lastMessage.id === reaction.message.id) {
-    console.log("stage 1: " + user.tag);
     if (reaction.emoji.name.toString().includes("✅")) {
-      console.log("Was same emoji");
       //Not self
       if (user.tag !== lastMessage.author.tag) {
         console.log(user.tag + " attempted to check-in!");
