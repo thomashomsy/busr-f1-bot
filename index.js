@@ -102,7 +102,6 @@ bot.on("ready", () => {
     },
   });
 });
-
 /**
  * The Original Setup for making a check-in system
  */
