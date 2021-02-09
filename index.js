@@ -106,8 +106,12 @@ bot.on("ready", () => {
  * The Original Setup for making a check-in system
  */
 bot.on("message", async (msg) => {
-  if (msg.content.startsWith("!setup")) {
-    if (msg.channel.name === channel && admins.includes(msg.author.tag)) {
+  if (
+    msg.channel.name === channel &&
+    admins.includes(msg.author.tag) &&
+    msg.author.tag !== bot.user.tag
+  ) {
+    if (msg.content.startsWith("!setup")) {
       const aRole = bot.guilds.array()[0].roles.find((r) => r.name === role);
       const adminRole = bot.guilds
         .array()[0]
@@ -138,6 +142,8 @@ bot.on("message", async (msg) => {
         "\n==============================================================\n\nYou have Have Setup Checkin for Race " +
           race
       );
+      msg.delete();
+    } else {
       msg.delete();
     }
   }

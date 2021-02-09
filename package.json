@@ -9,7 +9,7 @@
   "author": "Thomas Homsy",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.5.1",
+    "discord.js": "^11.6.4",
     "dotenv": "^8.2.0",
     "googleapis": "^39.2.0"
   }
